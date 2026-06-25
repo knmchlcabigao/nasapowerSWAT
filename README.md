@@ -97,17 +97,17 @@ If you use this tool in your research, please cite it as:
 
 > Cabigao, K.M.F. (2025). *NASA POWER Daily Data Downloader for SWAT Model (v1.0)*. Retrieved from [https://github.com/YourGitHubUsername/nasapowerSWAT](https://github.com/knmchlcabigao/nasapowerSWAT)
 
-## Publication Status
-
-A peer-reviewed journal article describing the development and application of **nasapowerSWAT** is currently **being written for submission**. Once published, a full citation will be added here.
-
-In the meantime, please cite the software directly (see [Citation](#citation) above).
-
 You may also cite the underlying NASA POWER R client:
 
 > Sparks, A.H. (2018). nasapower: A NASA POWER Global Meteorology, Surface Solar Energy and Climatology Data Client for R. *Journal of Open Source Software*, 3(30), 1035. https://doi.org/10.21105/joss.01035
 
 ---
+
+## Publication Status
+
+A peer-reviewed journal article describing the development and application of **nasapowerSWAT** is currently **being written for submission**. Once published, a full citation will be added here.
+
+In the meantime, please cite the software directly (see [Citation](#citation) above).
 
 ## License
 
