@@ -56,7 +56,7 @@ library(nasapowerSWAT)
 run_app()
 ```
 
-The app will open in your default web browser. That's it!
+The app will now open. You have an option to open it in your browser. That's it!
 
 ---
 
