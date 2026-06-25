@@ -37,7 +37,7 @@ Open RStudio and run the following in the **Console** panel:
 install.packages("devtools")
 
 # Install nasapowerSWAT from GitHub
-devtools::install_github("YourGitHubUsername/nasapowerSWAT")
+devtools::install_github("knmchlcabigao/nasapowerSWAT")
 ```
 
 > This may take a few minutes the first time — it will also install all required packages automatically.
