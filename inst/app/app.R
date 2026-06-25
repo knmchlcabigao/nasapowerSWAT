@@ -279,7 +279,7 @@ ui <- fluidPage(
   # ── Fixed header ────────────────────────────────────────────────────────────
   div(class = "app-header",
       icon("satellite-dish"),
-      "NASA POWER Daily Data Downloader for SWAT",
+      "NASA POWER Daily Data Downloader for SWAT Model",
       span(class = "ver", "v1.0")
   ),
   
