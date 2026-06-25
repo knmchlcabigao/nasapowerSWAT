@@ -76,7 +76,7 @@ The app will open in your default web browser. That's it!
 When a new version is released, reinstall with the same command:
 
 ```r
-devtools::install_github("YourGitHubUsername/nasapowerSWAT")
+devtools::install_github("knmchlcabigao/nasapowerSWAT")
 ```
 
 ---
