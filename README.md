@@ -107,7 +107,7 @@ You may also cite the underlying NASA POWER R client:
 
 A peer-reviewed journal article describing the development and application of **nasapowerSWAT** is currently **being written for submission**. Once published, a full citation will be added here.
 
-In the meantime, please cite the software directly (see [Citation](#citation) above).
+In the meantime, please cite the software directly (see **Citation** above).
 
 ---
 
