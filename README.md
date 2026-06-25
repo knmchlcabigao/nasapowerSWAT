@@ -1,5 +1,7 @@
 # nasapowerSWAT v1.0 <img src="https://img.shields.io/badge/R-package-276DC3?style=flat&logo=r" align="right"/>
 
+[![DOI](https://zenodo.org/badge/1279921084.svg)](https://doi.org/10.5281/zenodo.20840987)
+
 **NASA POWER Daily Data Downloader for SWAT and SWAT+**
 
 A Shiny-based desktop app that downloads daily climate data from [NASA POWER](https://power.larc.nasa.gov/) and formats it for use in [SWAT](https://swat.tamu.edu/) and [SWAT+](https://swat.tamu.edu/software/plus/) hydrological models.
