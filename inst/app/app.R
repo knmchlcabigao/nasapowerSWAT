@@ -331,7 +331,7 @@ ui <- fluidPage(
                         target = "_blank"),
                  "."
                ),
-               p("You may also cite the underlying NASA POWER data source:"),
+               p("You may also cite the underlying NASA POWER R Client:"),
                tags$blockquote(
                  style = "border-left: 4px solid #0e8a7a; padding: 10px 16px; background: #f0faf8;
                border-radius: 0 4px 4px 0; font-style: italic; color: #333;",
