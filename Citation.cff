@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Cabigao"
+  given-names: "Kean Michael"
+  orcid: "https://orcid.org/0009-0000-3687-4736"
+title: "nasapowerSWAT"
+version: 1.0.0
+doi: 10.5281/zenodo.20840987
+date-released: 2026-06-25
+url: "https://github.com/knmchlcabigao/nasapowerSWAT"
