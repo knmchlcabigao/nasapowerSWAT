@@ -326,8 +326,8 @@ ui <- fluidPage(
                  "Cabigao, K.M.F. (", format(Sys.Date(), "%Y"), "). ",
                  tags$em("NASA POWER Daily Data Downloader for SWAT Model (v1.0)"), ". ",
                  "Retrieved from ",
-                 tags$a("https://github.com/YourUsername/NASAPower-SWAT-Downloader",
-                        href = "https://github.com/YourUsername/NASAPower-SWAT-Downloader",
+                 tags$a("https://github.com/knmchlcabigao/nasapowerSWAT",
+                        href = "https://github.com/knmchlcabigao/nasapowerSWAT",
                         target = "_blank"),
                  "."
                ),
