@@ -109,6 +109,8 @@ A peer-reviewed journal article describing the development and application of **
 
 In the meantime, please cite the software directly (see [Citation](#citation) above).
 
+---
+
 ## License
 
 MIT © [Kean Michael F. Cabigao](mailto:knmchlcabigao@gmail.com)
