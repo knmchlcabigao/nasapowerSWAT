@@ -49,6 +49,11 @@ devtools::install_github("knmchlcabigao/nasapowerSWAT")
 ```r
 nasapowerSWAT::run_app()
 ```
+OR
+```r
+library(nasapowerSWAT)
+run_app()
+```
 
 The app will open in your default web browser. That's it!
 
