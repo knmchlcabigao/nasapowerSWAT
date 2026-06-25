@@ -96,7 +96,7 @@ devtools::install_github("knmchlcabigao/nasapowerSWAT")
 
 If you use this tool in your research, please cite it as:
 
-> Cabigao, K.M.F. (2025). *NASA POWER Daily Data Downloader for SWAT Model (v1.0)*. Retrieved from [https://github.com/YourGitHubUsername/nasapowerSWAT](https://github.com/knmchlcabigao/nasapowerSWAT)
+> Cabigao, K. M. (2026). nasapowerSWAT (Version 1.0.0) [Computer software]. https://doi.org/10.5281/zenodo.20840987
 
 You may also cite the underlying NASA POWER R client:
 
