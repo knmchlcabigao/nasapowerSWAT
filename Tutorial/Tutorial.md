@@ -17,8 +17,9 @@ A step-by-step guide to **nasapowerSWAT** — a Shiny-based desktop app that dow
 7. [Tab 3 — Export Data](#7-tab-3--export-data)
 8. [Tab 4 — Lookup Table](#8-tab-4--lookup-table)
 9. [Tab 5 — Visualize](#9-tab-5--visualize)
-10. [Updating the Package](#10-updating-the-package)
-11. [References & Citation](#11-references--citation)
+10. [Reset / New Request](#Reset-/-New-Request)
+11. [Updating the Package](#10-updating-the-package)
+12. [References & Citation](#11-references--citation)
 
 ---
 
@@ -223,9 +224,22 @@ Summary statistics are computed to quantify the agreement:
 
 > **Tip:** This comparison is especially useful when deciding whether to use NASA POWER data directly or to bias-correct it before SWAT calibration.
 
+**Customize timeseries and scatter plots**
+You can further customize your graphs by adjusting the options available in the *Customize Timeseries Plot* and *Observed Data Setup & Styling* menus.
+
+**Export Graph**
+Select the graph you want to export, along with the desired file format, resolution, and dimensions.
+
 ---
 
-## 10. Updating the Package
+## 10. Reset / New Request
+To remove all user-provided settings and start a new data request, click **Reset Everything**.
+
+![reset](images/reset.png)
+
+---
+
+## 11. Updating the Package
 
 When a new version of nasapowerSWAT is released, update it with the same install command:
 
@@ -235,7 +249,7 @@ pak::pak("knmchlcabigao/nasapowerSWAT")
 
 ---
 
-## 11. References & Citation
+## 12. References & Citation
 
 **nasapowerSWAT**
 > Cabigao, K. M. (2026). nasapowerSWAT (Version 1.0.0) [Computer software]. https://doi.org/10.5281/zenodo.20840987
