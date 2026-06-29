@@ -92,6 +92,9 @@ pak::pak("knmchlcabigao/nasapowerSWAT")
 
 ---
 
+## Tutorial
+See the [full tutorial](TUTORIAL.md) for a step-by-step guide to installing and using the app.
+
 ## Citation
 
 If you use this tool in your research, please cite it as:
