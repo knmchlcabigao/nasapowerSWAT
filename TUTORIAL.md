@@ -151,6 +151,10 @@ Once data has been fetched, this tab lets you save it to your computer.
 
 Type a path to select the folder where files will be saved.
 
+**Export**
+
+Click **Export**. One folder per climate variable will be written to your chosen directory. File names follow SWAT conventions (e.g., `Precipitation/station_1.txt`, `Relative Humidity/station_1.txt`).
+
 Choose **Export as .txt Files (SWAT format)** or **Export as CSV**.
 
 | Format | Use case |
@@ -158,9 +162,6 @@ Choose **Export as .txt Files (SWAT format)** or **Export as CSV**.
 | `.txt` (SWAT-ready) | Direct input to ArcSWAT, QSWAT, or SWAT+ Editor |
 | `.csv` | General use, post-processing, or archiving |
 
-**Export**
-
-Click **Export**. One folder per climate variable will be written to your chosen directory. File names follow SWAT conventions (e.g., `Precipitation/station_1.txt`, `Relative Humidity/station_1.txt`).
 
 > **Tip:** Export both `.txt` and `.csv` — the `.txt` files go straight into SWAT, and the `.csv` files are useful for checking the data in Excel or R.
 
