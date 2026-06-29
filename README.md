@@ -78,7 +78,7 @@ The app will now open. You have an option to open it in your browser. That's it!
 When a new version is released, reinstall with the same command:
 
 ```r
-devtools::install_github("knmchlcabigao/nasapowerSWAT")
+pak::pak("knmchlcabigao/nasapowerSWAT")
 ```
 
 ---
