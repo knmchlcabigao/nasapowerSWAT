@@ -179,7 +179,7 @@ SWAT requires a **station lookup table** that maps each weather station to its c
 
 **Export the lookup table**
 
-Click **Export Lookup Table** to save it. This file is required when setting up weather data in ArcSWAT or SWAT+. The file will be saved to the output folder directory provided in **Tab 3**.
+Click **Export Lookup Table** to save it. This file is required when setting up weather data in ArcSWAT, QSWAT, or SWAT+. The file will be saved to the output folder directory provided in **Tab 3**.
 
 ---
 
