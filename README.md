@@ -1,4 +1,4 @@
-# nasapowerSWAT v1.0 <img src="https://img.shields.io/badge/R-package-276DC3?style=flat&logo=r" align="right"/>
+# nasapowerSWAT v1.1 <img src="https://img.shields.io/badge/R-package-276DC3?style=flat&logo=r" align="right"/>
 
 **NASA POWER Daily Data Downloader for SWAT and SWAT+ Models**
 
