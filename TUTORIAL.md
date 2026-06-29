@@ -153,7 +153,7 @@ Type a path to select the folder where files will be saved.
 
 **Export**
 
-Click **Export**. One folder per climate variable will be written to your chosen directory. File names follow SWAT conventions (e.g., `Precipitation/station_1.txt`, `Relative Humidity/station_1.txt`).
+Click **Export**. One folder per climate variable will be written to your chosen directory. File names follow SWAT conventions (e.g., `Precipitation/station_1.txt`, `Relative Humidity/station_1.txt`, etc.).
 
 Choose **Export as .txt Files (SWAT format)** or **Export as CSV**.
 
