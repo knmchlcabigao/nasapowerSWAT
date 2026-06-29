@@ -122,14 +122,14 @@ With your study area defined, this tab controls *what* data to download and *whe
 
 Check the variables you need for your SWAT simulation:
 
-| Variable | NASA POWER Parameter | Notes |
-|---|---|---|
-| Precipitation | `PRECTOTCORR` | |
-| Max Temperature | `T2M_MAX` | |
-| Min Temperature | `T2M_MIN` | |
-| Solar Radiation | `ALLSKY_SFC_SW_DWN` | Fetched on a separate spatial grid from the other variables. The app automatically maps each weather station to its nearest solar radiation grid point, ensuring every station receives a solar radiation value without creating duplicate or mismatched stations. |
-| Wind Speed | `WS2M` | |
-| Relative Humidity | `RH2M` | |
+| Variable | NASA POWER Parameter | Spatial Resolution | Notes |
+|---|---|---|---|
+| Precipitation | `PRECTOTCORR` | 0.5° × 0.625° (MERRA-2) | |
+| Max Temperature | `T2M_MAX` | 0.5° × 0.625° (MERRA-2) | |
+| Min Temperature | `T2M_MIN` | 0.5° × 0.625° (MERRA-2) | |
+| Solar Radiation | `ALLSKY_SFC_SW_DWN` | 1° × 1° (CERES SYN1deg) | Fetched on a coarser grid than the other variables. The app automatically maps each weather station to its nearest solar radiation grid point, ensuring every station receives a solar radiation value without creating duplicate or mismatched stations. |
+| Wind Speed | `WS10M` | 0.5° × 0.625° (MERRA-2) | |
+| Relative Humidity | `RH2M` | 0.5° × 0.625° (MERRA-2) | |
 
 **Set the year range**
 
