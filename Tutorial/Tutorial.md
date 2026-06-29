@@ -80,6 +80,8 @@ This may take a few minutes the first time as it installs all dependencies autom
 
 Once installed, launch the app with either of these commands in the RStudio Console:
 
+![App Launch](Tutorial/images/app_launch.png)
+
 ```r
 nasapowerSWAT::run_app()
 ```
@@ -94,8 +96,6 @@ run_app()
 The Shiny app will open in the RStudio Viewer pane. You can click **"Open in Browser"** (top-left of the viewer) to use it in your web browser for a larger workspace.
 
 ---
-
-![4. Launching the App](Tutorial/images/app_launch.png)
 
 ## 5. Tab 1 — Define Study Area
 
