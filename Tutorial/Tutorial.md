@@ -93,8 +93,9 @@ run_app()
 
 The Shiny app will open in the RStudio Viewer pane. You can click **"Open in Browser"** (top-left of the viewer) to use it in your web browser for a larger workspace.
 
----
 ![App Launch](images/app_launch.png)
+
+---
 
 ## 5. Tab 1 — Define Study Area
 
