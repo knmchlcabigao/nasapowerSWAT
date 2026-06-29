@@ -219,7 +219,6 @@ Summary statistics are computed to quantify the agreement:
 - Percent Bias (PBIAS)
 
 ![timeseries](images/timeseries_2.png)
-
 ![timeseries](images/timeseries_3.png)
 
 > **Tip:** This comparison is especially useful when deciding whether to use NASA POWER data directly or to bias-correct it before SWAT calibration.
