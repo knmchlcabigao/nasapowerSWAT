@@ -4,7 +4,7 @@
 
 A Shiny-based desktop app that downloads daily climate data from [NASA POWER](https://power.larc.nasa.gov/) and formats it for use in [SWAT](https://swat.tamu.edu/) and [SWAT+](https://swat.tamu.edu/software/plus/) hydrological models.
 
-[![DOI](https://zenodo.org/badge/1279921084.svg)](https://doi.org/10.5281/zenodo.20840987)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21020522.svg)](https://doi.org/10.5281/zenodo.21020522)
 
 ---
 
@@ -96,7 +96,7 @@ pak::pak("knmchlcabigao/nasapowerSWAT")
 
 If you use this tool in your research, please cite it as:
 
-> Cabigao, K. M. (2026). nasapowerSWAT (Version 1.0.0) [Computer software]. https://doi.org/10.5281/zenodo.20840987
+> Cabigao, K. M. (2026). nasapowerSWAT (Version 1.0.0) [Computer software]. https://doi.org/10.5281/zenodo.21020522
 
 You may also cite the underlying NASA POWER R client:
 
