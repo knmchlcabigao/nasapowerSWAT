@@ -1,4 +1,4 @@
-<img width="1528" height="411" alt="image" src="https://github.com/user-attachments/assets/36770985-43b0-4c0c-855c-b959f6af3553" /># nasapowerSWAT Tutorial
+# nasapowerSWAT Tutorial
 
 A step-by-step guide to **nasapowerSWAT** — a Shiny-based desktop app that downloads daily climate data from [NASA POWER](https://power.larc.nasa.gov/) and formats it for use in [SWAT](https://swat.tamu.edu/) and [SWAT+](https://swat.tamu.edu/software/plus/) hydrological models.
 
