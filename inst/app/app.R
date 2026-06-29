@@ -515,6 +515,12 @@ ui <- fluidPage(
                                                    value = "NASA POWER", width = "100%"))
                              ),
                              fluidRow(
+                               column(8, textInput("viz_range_label", "Station range legend label (All Stations only)",
+                                                   value = "", placeholder = "Leave blank to auto-generate from year range",
+                                                   width = "100%")),
+                               column(4)
+                             ),
+                             fluidRow(
                                column(4, numericInput("viz_linewidth", "Line width",
                                                       value = 0.7, min = 0.2, max = 4, step = 0.1, width = "100%")),
                                column(4,
@@ -1280,6 +1286,7 @@ server <- function(input, output, session) {
     updateSelectInput(session, "viz_datefmt", selected = "auto")
     updateTextInput(session, "viz_color", value = "#0e8a7a")
     updateTextInput(session, "viz_fit_label", value = "NASA POWER")
+    updateTextInput(session, "viz_range_label", value = "")  # blank = auto from year range
     updateNumericInput(session, "viz_linewidth", value = 0.7)
     updateCheckboxInput(session, "viz_points", value = FALSE)
     updateCheckboxInput(session, "viz_legend", value = TRUE)
@@ -1319,6 +1326,20 @@ server <- function(input, output, session) {
       d$value <- clean_missing(d$value)          # -999 / non-finite -> NA
       d$station_id <- factor(d$station_id)
       
+      # Build the year-range label for the gray station lines legend entry.
+      # Use the user-supplied label if provided; otherwise auto-generate from the data.
+      yr_min <- format(min(df$DATE, na.rm = TRUE), "%Y")
+      yr_max <- format(max(df$DATE, na.rm = TRUE), "%Y")
+      user_range_label <- trimws(input$viz_range_label %||% "")
+      range_label <- if (nzchar(user_range_label)) {
+        user_range_label
+      } else if (yr_min == yr_max) {
+        paste0("Station range (", yr_min, ")")
+      } else {
+        paste0("Station range (", yr_min, "\u2013", yr_max, ")")
+      }
+      d$range_label <- range_label   # constant column used only for legend mapping
+      
       # Daily mean across stations — keep ALL dates so fully-missing days break
       # the line rather than getting bridged over. All-NA days become NA.
       all_dates <- data.frame(DATE = sort(unique(d$DATE)))
@@ -1331,8 +1352,8 @@ server <- function(input, output, session) {
       p <- ggplot2::ggplot() +
         ggplot2::geom_line(
           data = d,
-          ggplot2::aes(x = DATE, y = value, group = station_id),
-          color = "grey75", linewidth = max(lw * 0.6, 0.3), alpha = 0.6,
+          ggplot2::aes(x = DATE, y = value, group = station_id, color = range_label),
+          linewidth = max(lw * 0.6, 0.3), alpha = 0.6,
           na.rm = TRUE
         ) +
         ggplot2::geom_line(
@@ -1364,6 +1385,9 @@ server <- function(input, output, session) {
     }
     
     # Observed overlay (optional) — also builds the combined color legend
+    # Whether the gray range label exists (only in all-stations mode)
+    has_range_label <- identical(input$viz_station, "__ALL__")
+    
     if (has_obs) {
       obs_col <- input$obs_color %||% "#d1495b"
       obs_col <- tryCatch({ grDevices::col2rgb(obs_col); obs_col },
@@ -1375,15 +1399,36 @@ server <- function(input, output, session) {
         ggplot2::aes(x = DATE, y = OBS, color = obs_label),
         linewidth = max(lw, 0.8)
       )
-      p <- p + ggplot2::scale_color_manual(
-        name   = NULL,
-        values = stats::setNames(c(col, obs_col), c(fit_label, obs_label))
-      )
+      if (has_range_label) {
+        p <- p + ggplot2::scale_color_manual(
+          name   = NULL,
+          values = stats::setNames(c("grey75", col, obs_col),
+                                   c(range_label, fit_label, obs_label)),
+          guide  = ggplot2::guide_legend(
+            override.aes = list(alpha = c(1, 1, 1), linewidth = c(0.8, 1.2, 1.2))
+          )
+        )
+      } else {
+        p <- p + ggplot2::scale_color_manual(
+          name   = NULL,
+          values = stats::setNames(c(col, obs_col), c(fit_label, obs_label))
+        )
+      }
     } else {
-      p <- p + ggplot2::scale_color_manual(
-        name   = NULL,
-        values = stats::setNames(col, fit_label)
-      )
+      if (has_range_label) {
+        p <- p + ggplot2::scale_color_manual(
+          name   = NULL,
+          values = stats::setNames(c("grey75", col), c(range_label, fit_label)),
+          guide  = ggplot2::guide_legend(
+            override.aes = list(alpha = c(1, 1), linewidth = c(0.8, 1.2))
+          )
+        )
+      } else {
+        p <- p + ggplot2::scale_color_manual(
+          name   = NULL,
+          values = stats::setNames(col, fit_label)
+        )
+      }
     }
     
     # ── X-axis date formatting ──
@@ -1441,7 +1486,7 @@ server <- function(input, output, session) {
     input$obs_clear  # rerun when observed data is removed
     # Also live-update as timeseries style fields change (including axis labels)
     input$viz_title; input$viz_xlab; input$viz_ylab; input$viz_datefmt
-    input$viz_color; input$viz_fit_label; input$viz_linewidth
+    input$viz_color; input$viz_fit_label; input$viz_range_label; input$viz_linewidth
     input$viz_points; input$viz_legend
     build_viz_plot()
   })
