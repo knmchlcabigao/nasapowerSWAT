@@ -172,6 +172,7 @@ Choose **Export as .txt Files (SWAT format)** or **Export as CSV**.
 | `.csv` | General use, post-processing, or archiving |
 
 ![Export](images/export.png)
+
 ![Export data](images/exported_data.png)
 
 > **Tip:** Export both `.txt` and `.csv` — the `.txt` files go straight into SWAT, and the `.csv` files are useful for checking the data in Excel or R.
@@ -192,6 +193,8 @@ SWAT requires a **station lookup table** that maps each weather station to its c
 
 Click **Export Lookup Table** to save it. This file is required when setting up weather data in ArcSWAT, QSWAT, or SWAT+. The file will be saved to the output folder directory provided in **Tab 3**.
 
+![Lookup table](images/lookup_table.png)
+
 ---
 
 ## 9. Tab 5 — Visualize
@@ -201,6 +204,8 @@ This tab helps you inspect the downloaded data and assess its quality before usi
 **Timeseries plots**
 
 Select a variable and station to view a timeseries plot of the fetched NASA POWER data across your date range. This helps you quickly spot anomalies, flat lines, or gaps.
+
+![timeseries](images/timeseries.png)
 
 **Comparison with observed data**
 
@@ -212,6 +217,10 @@ Summary statistics are computed to quantify the agreement:
 - Kling-Gupta Efficiency (KGE)
 - Root Mean Square Error (RMSE)
 - Percent Bias (PBIAS)
+
+![timeseries](images/timeseries_2.png)
+
+![timeseries](images/timeseries_3.png)
 
 > **Tip:** This comparison is especially useful when deciding whether to use NASA POWER data directly or to bias-correct it before SWAT calibration.
 
