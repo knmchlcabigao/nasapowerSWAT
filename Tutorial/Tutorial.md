@@ -107,10 +107,14 @@ This is your starting point. You need to tell the app *where* to fetch climate d
 2. Use the drawing tool to drag a bounding box over your watershed or region of interest.
 3. The app automatically generates a grid of NASA POWER query points within the bounding box.
 
+![Bounding Box](images/bounding_box.png)
+
 **Option B — Enter coordinates manually**
 
 1. Type in the **latitude** and **longitude** bounds of your study area directly into the input fields.
 2. Press **Apply** (or equivalent button) to confirm.
+
+![Coordinates](images/coordinates.png)
 
 > **Tip:** NASA POWER data has a spatial resolution of 0.5° × 0.5° (roughly 55 km at the equator). Each grid point within your bounding box becomes one weather station in SWAT. However, the minimum region of interest should be 2° in each direction.
 
@@ -141,6 +145,9 @@ Enter your simulation's **start year** and **end year**. Data is available from 
 
 Click the **Fetch Data** button. The app will query the NASA POWER API for each grid point in your study area. A progress indicator will appear — larger areas or longer time periods will take more time.
 
+![Fetch data](images/fetch_data.png)
+![Fetch data 2](images/fetch_data(2).png)
+
 > **Note:** A stable internet connection is required. If the fetch fails, check your connection and try reducing the spatial extent or date range.
 
 ---
@@ -163,6 +170,9 @@ Choose **Export as .txt Files (SWAT format)** or **Export as CSV**.
 |---|---|
 | `.txt` (SWAT-ready) | Direct input to ArcSWAT, QSWAT, or SWAT+ Editor |
 | `.csv` | General use, post-processing, or archiving |
+
+![Export](images/export.png)
+![Export data](images/exported_data.png)
 
 > **Tip:** Export both `.txt` and `.csv` — the `.txt` files go straight into SWAT, and the `.csv` files are useful for checking the data in Excel or R.
 
