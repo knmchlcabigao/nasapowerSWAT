@@ -17,7 +17,7 @@ A step-by-step guide to **nasapowerSWAT** — a Shiny-based desktop app that dow
 7. [Tab 3 — Export Data](#7-tab-3--export-data)
 8. [Tab 4 — Lookup Table](#8-tab-4--lookup-table)
 9. [Tab 5 — Visualize](#9-tab-5--visualize)
-10. [Reset / New Request](#10-reset-/-new-request)
+10. [Reset / New Request](#10-reset--new-request)
 11. [Updating the Package](#11-updating-the-package)
 12. [References & Citation](#12-references--citation)
 
