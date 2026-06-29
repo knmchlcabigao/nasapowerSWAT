@@ -122,14 +122,14 @@ With your study area defined, this tab controls *what* data to download and *whe
 
 Check the variables you need for your SWAT simulation:
 
-| Variable | NASA POWER Parameter |
-|---|---|
-| Precipitation | `PRECTOTCORR` |
-| Max Temperature | `T2M_MAX` |
-| Min Temperature | `T2M_MIN` |
-| Solar Radiation | `ALLSKY_SFC_SW_DWN` |
-| Wind Speed | `WS2M` |
-| Relative Humidity | `RH2M` |
+| Variable | NASA POWER Parameter | Notes |
+|---|---|---|
+| Precipitation | `PRECTOTCORR` | |
+| Max Temperature | `T2M_MAX` | |
+| Min Temperature | `T2M_MIN` | |
+| Solar Radiation | `ALLSKY_SFC_SW_DWN` | Fetched on a separate spatial grid from the other variables. The app automatically maps each weather station to its nearest solar radiation grid point, ensuring every station receives a solar radiation value without creating duplicate or mismatched stations. |
+| Wind Speed | `WS2M` | |
+| Relative Humidity | `RH2M` | |
 
 **Set the year range**
 
@@ -161,7 +161,6 @@ Choose **Export as .txt Files (SWAT format)** or **Export as CSV**.
 |---|---|
 | `.txt` (SWAT-ready) | Direct input to ArcSWAT, QSWAT, or SWAT+ Editor |
 | `.csv` | General use, post-processing, or archiving |
-
 
 > **Tip:** Export both `.txt` and `.csv` — the `.txt` files go straight into SWAT, and the `.csv` files are useful for checking the data in Excel or R.
 
