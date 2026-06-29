@@ -1,4 +1,4 @@
-# nasapowerSWAT Tutorial
+<img width="1528" height="411" alt="image" src="https://github.com/user-attachments/assets/36770985-43b0-4c0c-855c-b959f6af3553" /># nasapowerSWAT Tutorial
 
 A step-by-step guide to **nasapowerSWAT** — a Shiny-based desktop app that downloads daily climate data from [NASA POWER](https://power.larc.nasa.gov/) and formats it for use in [SWAT](https://swat.tamu.edu/) and [SWAT+](https://swat.tamu.edu/software/plus/) hydrological models.
 
@@ -80,8 +80,6 @@ This may take a few minutes the first time as it installs all dependencies autom
 
 Once installed, launch the app with either of these commands in the RStudio Console:
 
-![App Launch](Tutorial/images/app_launch.png)
-
 ```r
 nasapowerSWAT::run_app()
 ```
@@ -96,6 +94,7 @@ run_app()
 The Shiny app will open in the RStudio Viewer pane. You can click **"Open in Browser"** (top-left of the viewer) to use it in your web browser for a larger workspace.
 
 ---
+![App Launch](images/app_launch.png)
 
 ## 5. Tab 1 — Define Study Area
 
