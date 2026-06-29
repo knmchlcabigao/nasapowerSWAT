@@ -95,7 +95,7 @@ The Shiny app will open in the RStudio Viewer pane. You can click **"Open in Bro
 
 ---
 
-![App Launch](Tutorial/images/app_launch.png)
+![4. Launching the App](Tutorial/images/app_launch.png)
 
 ## 5. Tab 1 — Define Study Area
 
